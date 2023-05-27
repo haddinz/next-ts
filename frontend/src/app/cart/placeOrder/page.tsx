@@ -62,7 +62,7 @@ function PlaceOrder() {
         <h1 className="text-xl md:text-4xl font-bold text-cyan-600 my-10">
           Preview Order
         </h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-3 gap-5">
           <div className="col-span-2">
             <div className="border-2 my-5 border-cyan-900 p-5 rounded-lg">
               <h3 className="h3">Shipping</h3>
@@ -121,7 +121,7 @@ function PlaceOrder() {
               <Hanger link="/cart?redirect=/cart/placeOrder">Edit</Hanger>
             </div>
           </div>
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <div className="border-2 my-5 border-cyan-900 p-5 rounded-lg">
               <h3 className="h3">Order Summary</h3>
               <div className="flex justify-between">

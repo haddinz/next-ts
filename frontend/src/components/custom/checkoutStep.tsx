@@ -19,7 +19,7 @@ function CheckOutStep(props: {
           >
             1
           </span>
-          Sign In
+          <p className="mt-2 hidden md:inline-block">Sign In</p>
         </div>
         <div
           className={`py-3 ${
@@ -33,7 +33,7 @@ function CheckOutStep(props: {
           >
             2
           </span>
-          Shipping
+          <p className="mt-2 hidden md:inline-block">Shipping</p>
         </div>
         <div
           className={`py-3 border-b-2 ${
@@ -47,7 +47,7 @@ function CheckOutStep(props: {
           >
             3
           </span>
-          Payment
+          <p className="mt-2 hidden md:inline-block">Payment</p>
         </div>
         <div
           className={`py-3 border-b-2 ${
@@ -61,7 +61,7 @@ function CheckOutStep(props: {
           >
             4
           </span>
-          Place Order
+          <p className="mt-2 hidden md:inline-block">Place Order</p>
         </div>
       </div>
     </div>

@@ -40,17 +40,18 @@ function Header() {
   };
 
   return (
-    <div className="w-full h-[80px]">
+    <div className="fixed w-full h-[80px] bg-gray-100 dark:bg-gray-900 z-10">
       <ToastContainer position="top-center" limit={1} />
       <div className="container dark:dark">
         <div className="grid grid-cols-2 sm:grid-cols-5 h-full">
-          <div className="sm:col-span-4 flex items-center">
+          <div className="sm:col-span-3 flex items-center">
             <Link href="/" className="text-xl font-bold md:text-2xl">
               LOGO.ID
             </Link>
           </div>
-          <div className="my-auto">
-            <nav className="block md:hidden text-right">
+
+          <div className="sm:col-span-2 my-auto">
+            <nav className="block md:hidden">
               <Sidebar />
             </nav>
             <nav className="w-full hidden md:flex items-center justify-end font-bold">
@@ -64,12 +65,22 @@ function Header() {
               </Link>
               <span className="mr-5">||</span>
               {userInfo ? (
-                <div className="mr-5 relative">
-                  <button onClick={dropdownHandler}>Hello {userInfo.name}</button>
+                <div className="mr-5 relative cursor-pointer">
+                  <div onClick={dropdownHandler}>Hello {userInfo.name}</div>
                   <div
                     onClick={() => setDropdown(!dropdrown)}
-                    className={`absolute flex flex-col bg-sky-700 w-64 p-3 right-0 mt-5 rounded-lg transition origin-top duration-300 transform scale-y-0 border border-white border-opacity-70 ${
-                      dropdrown && "scale-y-100"
+                    className={`${
+                      dropdrown
+                        ? `fixed top-0 left-0 w-full h-[100vh] bg-gray-900 bg-opacity-40`
+                        : "hidden"
+                    }`}
+                  />
+                  <div
+                    onClick={() => setDropdown(!dropdrown)}
+                    className={`${
+                      dropdrown
+                        ? `absolute p-5 bg-sky-700 rounded mt-5 right-0 w-64 flex flex-col`
+                        : "hidden"
                     }`}
                   >
                     <Link

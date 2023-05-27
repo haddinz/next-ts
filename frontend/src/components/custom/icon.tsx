@@ -97,7 +97,7 @@ const Hamburger = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 18 18"
+      viewBox="3 3 18 18"
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6"
@@ -116,7 +116,7 @@ const X = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 18 18"
+      viewBox="2 2 18 18"
       strokeWidth={1.5}
       stroke="currentColor"
       className="w-6 h-6 text-white"

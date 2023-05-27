@@ -1,6 +1,7 @@
 import { Product } from "@/types/Product";
 
-const Product: Product[] = [
+// const Product: Product[] = [ deleted ]
+const Product = [
   {
     name: "Fanta",
     slug: "fanta",

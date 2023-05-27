@@ -17,7 +17,7 @@ function Container({ children }: { children: React.ReactNode }) {
         <QueryClientProvider client={queryCLient}>
           <div className="min-h-screen flex flex-col justify-between">
             <Header />
-            <section>{children}</section>
+            <section className="mt-20">{children}</section>
             <Footer />
           </div>
         </QueryClientProvider>
